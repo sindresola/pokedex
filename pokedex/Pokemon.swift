@@ -14,11 +14,21 @@ class Pokemon {
     private var _name: String!
     private var _pokedexId: Int!
     private var _description: String!
-    private var _defense: String!
+    
     private var _type: String!
     private var _height: String!
     private var _weight: String!
     private var _attack: String!
+    private var _defense: String!
+    
+    private var _spAtk: String!
+    private var _spDef: String!
+    private var _hp: String!
+    private var _speed: String!
+    private var _gender: String!
+    
+    private var _abilities: [String]!
+    
     private var _nextEvolutionTxt: String!
     private var _pokemonUrl: String!
     private var _nextEvoId: String!
@@ -38,6 +48,38 @@ class Pokemon {
             _defense = ""
         }
         return _defense
+    }
+    
+    var spAtk:String{
+        
+        if _spAtk == nil{
+            _spAtk = ""
+        }
+        return _spAtk
+    }
+    
+    var hp:String{
+        if _hp == nil{
+            _hp = ""
+        }
+        
+        return _hp
+    }
+    
+    var spDef:String{
+        
+        if _spDef == nil{
+            _spDef = ""
+        }
+        return _spDef
+    }
+    
+    var speed:String{
+        
+        if _speed == nil{
+            _speed = ""
+        }
+        return _speed
     }
     
     var description:String{
@@ -60,7 +102,10 @@ class Pokemon {
         
         if _height == nil{
             _height = ""
+        }else{
+            _height = formatString(_height)
         }
+        print(_height)
         return _height
     }
     
@@ -68,6 +113,8 @@ class Pokemon {
         
         if _weight == nil{
             _weight = ""
+        }else{
+            _weight = formatString(_weight)
         }
         return _weight
     }
@@ -112,6 +159,14 @@ class Pokemon {
         
     }
     
+    
+    func formatString(input:String) ->String{
+        var val:Double!
+        val = Double(input)
+        val = val / 10
+        return String(val)
+    }
+    
     func downloadPokemonDetails(completetd: DownloadComplete){
         
         let url = NSURL(string: _pokemonUrl)!
@@ -126,6 +181,10 @@ class Pokemon {
                     self._height = height
                 }
                 
+                if let hp = dict["hp"] as? Int{
+                    self._hp = "\(hp)"
+                }
+                
                 if let attack = dict["attack"] as? Int{
                     self._attack = "\(attack)"
                 }
@@ -134,6 +193,17 @@ class Pokemon {
                     self._defense = "\(defense)"
                 }
                 
+                if let sp_def = dict["sp_def"] as? Int{
+                    self._spDef = "\(sp_def)"
+                }
+                
+                if let sp_atk = dict["sp_atk"] as? Int{
+                    self._spAtk = "\(sp_atk)"
+                }
+                
+                if let speed = dict["speed"] as? Int{
+                    self._speed = "\(speed)"
+                }
                 
                 if let types = dict["types"] as? [Dictionary<String, String>] where types.count > 0{
                     

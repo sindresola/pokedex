@@ -14,7 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftGifOrigin.xcscheme</key>
+		<key>UIGifImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YLProgressBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3ED10D5D8F0947BF8B158A6B9E93FB44</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>67CA6D10E5D27DC5B6D33D4A4617645E</key>
+		<key>546BE523D3476C300213C7543EAA6148</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCB5EAB87EDB20FD81498AD8D432C4A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F157BCFBCD44635054A305926CD15024</key>
 		<dict>
 			<key>primary</key>
 			<true/>

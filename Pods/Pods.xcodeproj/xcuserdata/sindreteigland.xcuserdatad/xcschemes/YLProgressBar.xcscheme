@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1D708CB862B5F7D59CC09133'
-               BlueprintName = 'SwiftGifOrigin'
+               BlueprintIdentifier = '4B269031C7BB9D2CD42ED5F4'
+               BlueprintName = 'YLProgressBar'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftGifOrigin.framework'>
+               BuildableName = 'YLProgressBar.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

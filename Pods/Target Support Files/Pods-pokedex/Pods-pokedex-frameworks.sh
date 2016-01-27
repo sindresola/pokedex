@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-pokedex/Alamofire.framework"
-  install_framework "Pods-pokedex/SwiftGifOrigin.framework"
+  install_framework "Pods-pokedex/UIGifImage.framework"
+  install_framework "Pods-pokedex/YLProgressBar.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-pokedex/Alamofire.framework"
-  install_framework "Pods-pokedex/SwiftGifOrigin.framework"
+  install_framework "Pods-pokedex/UIGifImage.framework"
+  install_framework "Pods-pokedex/YLProgressBar.framework"
 fi

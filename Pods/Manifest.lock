@@ -1,13 +1,16 @@
 PODS:
   - Alamofire (3.1.1)
-  - SwiftGifOrigin (1.5.1)
+  - UIGifImage (0.0.3)
+  - YLProgressBar (3.8.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
-  - SwiftGifOrigin (~> 1.5)
+  - UIGifImage
+  - YLProgressBar (~> 3.8)
 
 SPEC CHECKSUMS:
   Alamofire: 9b0a7188b961a03914a99304488bd226b0e46c0e
-  SwiftGifOrigin: 2dd51f087f77b676e75bb572f521e06e9ced6c58
+  UIGifImage: 7a38a4be53ed444d5db9e05743d69ea34df5ca35
+  YLProgressBar: b6ec76bea4a1b8d6bdfd2995d828055a7e5f3e9a
 
 COCOAPODS: 0.39.0

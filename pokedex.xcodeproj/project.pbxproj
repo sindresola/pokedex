@@ -210,7 +210,7 @@
 				TargetAttributes = {
 					69C562FA1BE79B5400E59957 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = M6NLSHR63Q;
+						DevelopmentTeam = 8ZE252SUAS;
 					};
 				};
 			};
@@ -426,9 +426,10 @@
 			baseConfigurationReference = 59A69081362A4F4881DE42A4 /* Pods-pokedex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sintei.pokedex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sindreteigland.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -438,9 +439,10 @@
 			baseConfigurationReference = D1CE25EB4DA10BCF67BDDFFC /* Pods-pokedex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sintei.pokedex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sindreteigland.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

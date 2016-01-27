@@ -5,6 +5,8 @@ use_frameworks!
 
 target 'pokedex' do
 pod 'Alamofire', '~> 3.0'
-pod 'SwiftGifOrigin', '~> 1.5'
+pod 'UIGifImage'
+pod 'YLProgressBar', '~> 3.8'
+
 end
 
